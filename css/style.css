@@ -1,0 +1,215 @@
+.photo{
+    display: flex;
+    flex-flow : column wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(../image/image-ban.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.go{
+    font-size: 50px;
+}
+.fleche{
+    position: absolute;
+    top: 90vh;
+    left: 49%;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-family: 'Acme', sans-serif;
+    color: #375D81;
+    text-align: center;
+}
+
+p{
+    font-family: 'Arima Madurai', cursive;
+}
+
+.photo h1 {
+    color: rgb(255, 255, 255);
+}
+
+.photo p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.text{
+    padding: 5vh;
+    background-color: rgba(19, 18, 18, 0.7);
+}
+
+.row{
+    margin-top: 10vh;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5vh;
+}
+
+.a-propos{
+    padding: 5vh;
+}
+
+.container{
+    box-shadow: 5px 5px 15px rgb(145, 142, 142);
+    margin-top: 15vh;
+    padding: 2vh;
+}
+
+.profil{
+    /* box-shadow: 5px 5px 15px rgb(145, 142, 142); */
+    margin-top: 15vh;
+    padding: 2vh;
+}
+
+.profil h2{
+    text-align: center;
+    background-color: #EFEFEF;
+}
+
+.profil p {
+    color: black;
+
+}
+
+.photo-jo{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh; 
+}
+
+.johan:hover{
+    transform: scale(1.1);
+}
+
+.johan{
+    border-radius: 50%;
+    border: 8px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 15px rgb(133, 131, 131);
+    width: 150px;
+    height: 150px;
+}
+
+.ligne{
+    display: flex;
+    justify-content: center;
+    margin: 5vh;
+    background-color: black;
+    height: 2px;
+    background-color: #A2B5BF;
+}
+
+.parcour{
+    margin-top: 15vh;
+    background-color: #FFFAFA;
+    padding: 5vh;
+}
+
+.parcour h2 {
+    text-align: center;
+}
+
+/* .title h2{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #375D81;
+} */
+
+.titre{
+    margin-top: 5vh;
+}
+
+.experience{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin-top: 10vh;
+}
+
+.card{
+    margin-top: 2vh;
+    box-shadow: 5px 5px 15px rgb(145, 142, 142); 
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card h5 {
+    color: #5F8CA3;
+}
+
+.formation{
+    margin-top: 15vh;
+}
+
+/* .formation h2{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #375D81;
+} */
+
+.popschool{
+    margin-top: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.log{
+    width: 150px;
+    height: 150px;
+    margin-top: 5vh;
+    transition: ease-in-out .5s;
+}
+
+.log:hover{
+    transform: rotate(360deg);
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 15vh;
+    
+}
+
+.competences{
+    margin-top: 15vh;
+} 
+
+
+
+/* .amazon{
+    
+    padding: 3vh;
+}
+
+.viapost{
+    
+    padding: 3vh;
+}
+
+.arvato{
+    
+    padding: 3vh;
+} */
+
+
+@media screen and (max-width : 990px){
+    .detail{
+        margin-top: 5vh;
+    }
+}
+
+
+
