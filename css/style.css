@@ -209,6 +209,13 @@ p{
     .detail{
         margin-top: 5vh;
     }
+
+    .fleche{
+        position: absolute;
+        top: 80vh;
+        left: 45%;
+        color: rgb(255, 255, 255);
+    }
 }
 
 
