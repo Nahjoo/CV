@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -27,7 +28,7 @@
     <!-- ---------------------------------------------------- HEADER ------------------------------------------------------ -->
     <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-            <a class="navbar-brand" href="#"> <img class="" src="" height="40"> DELCOURT Johan</a>
+            <a class="navbar-brand" href="#">DELCOURT Johan</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,34 +38,36 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#prof">Profil <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#parc"> Parcours </a></li>
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#parc"> Parcours </a></li>
                     <li class="nav-item"><a class="nav-link" href="#compet"> Compétences </a></li>
                     <li class="nav-item"><a class="nav-link" href="#proj"> Projets </a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Dropdown </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"> Menu item 1</a></li>
-                            <li><a class="dropdown-item" href="#"> Menu item 2 </a></li>
-                        </ul>
                     </li>
 
                 </ul>
             </div>
         </nav>
         <div class="photo">
+            <!-- <canvas id="canvas">
+                Un pauvre fou qui utililse encore internet explorer
+            </canvas> -->
+            <video id="bgvideo" poster="" loop="" playsinline="" autoplay="" muted="">
+                <source src="video/Space - 17068.mp4">
+            </video>
             <div class="text">
                 <h1>Delcourt johan</h1>
-                <p>Développeur Web / Web Mobile</p>
+                <p class="phrase"></p>
+
+
             </div>
         </div>
         <div class="fleche">
             <i class="large material-icons go">arrow_downward</i>
         </div>
 
-        
+
     </header>
     <!-- ----------------------------------------------------  MAIN  ------------------------------------------------------ -->
-    <main class="">
+    <main>
         <!-- ------------------------------------------------------------------- Profil ------------------------------------------------------------------------------ -->
         <div id="prof" class="container profil">
             <h2>Profil</h2>
@@ -80,14 +83,32 @@
                     <p>Je suis développeur web et web mobile junior issue de Pop School Lens (Grande école du
                         numérique). Je suis plus à l'aise sur le front-end mais j'ai aussi une maîtrise en back end.
                         J'aime travailler en équipe : on apprend plus vite et l'on va plus loin ensemble. Je suis
-                        actuellement en recherche d'emploi, en CDI ou en CDD.</p>
+                        actuellement en recherche d'emploi en CDI.</p>
                 </div>
 
                 <div class="col-lg-6 detail">
                     <h2>Détails</h2>
-                    <p>Nom : Delcourt Johan</p>
-                    <p>Âge : 21 ans </p>
-                    <p>Localisation : Wingles, Pas-de-calais, France</p>
+                    <ul>
+                        <li>
+                            <p>Nom : Delcourt Johan</p>
+                        </li>
+
+                        <li>
+                            <p>Âge : 21 ans </p>
+                        </li>
+                        <li>
+                            <p><i class="large material-icons">call</i> : 06.19.94.13.66</p>
+                        </li>
+
+                        <li>
+                            <p><i class="large material-icons">email</i> : johan.delcourt@hotmail.com</p>
+                        </li>
+
+                        <li>
+                            <p>Permis B</p>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
         </div>
@@ -107,38 +128,14 @@
 
             <div class="row experience">
 
-                <div class="amazon">
+                <div class="interim">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                            <h5 class="card-title">Intérim Amazon.</h5>
-                            <p class="card-subtitle mb-2 text-muted">Poste : Agent de production.</p>
-                            <p class="card-text">Mission: Contrôle ,enregistrement informatique d'articles.</p>
+                            <h5 class="card-title">Intérim</h5>
+                            <p class="card-subtitle mb-2 text-muted">Amazon : Agent de production.</p>
+                            <p class="card-subtitle mb-2 text-muted">viapost : Manutention</p>
+                            <p class="card-subtitle mb-2 text-muted">Arvato : Agent de production</p>
 
-                        </div>
-                    </div>
-                </div>
-
-                <div class="viapost">
-
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Intérim viapost</h5>
-                            <p class="card-subtitle mb-2 text-muted">Poste : Manutention.</p>
-                            <p class="card-text">Mission : Déchargement de camion.</p>
-
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div class="arvato">
-
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Intérim Arvato.</h5>
-                            <p class="card-subtitle mb-2 text-muted">Poste : Agent de production.</p>
-                            <p class="card-text">Mission : Mise en boite de capsules Nespresso.</p>
 
                         </div>
                     </div>
@@ -150,11 +147,37 @@
                         <div class="card-body">
                             <h5 class="card-title">Hackathon</h5>
                             <p class="card-subtitle mb-2 text-muted">Novembre 2018 : Contact avec des personnes agées.</p>
-                            <p class="card-text">Mission : Réalisation d'une maquette, pour améliorer la vie des personnes agées.</p>
+                            <p class="card-text">Mission : Réalisation d'une maquette, pour améliorer la vie des
+                                personnes agées.</p>
 
                         </div>
                     </div>
                 </div>
+
+                <div class="tadao">
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Tadao</h5>
+                            <p class="card-subtitle mb-2 text-muted">Projet de petit bus</p>
+                            <p class="card-text">Mission : Réalisation d'une base de donnée qui réference les bus les
+                                plus proches.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tadao">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Site vitrine</h5>
+                            <p class="card-subtitle mb-2 text-muted">Projet pour un particulier</p>
+                            <p class="card-text">Mission : Réalisation d'un site vitrine pour une entreprise.</p>
+                        </div>
+                    </div>
+                </div>
+
+
 
             </div>
 
@@ -163,7 +186,7 @@
                 <div class="popschool">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                            <h5 class="card-title">Date : </h5>
+                            <h5 class="card-title">Date : 2018 / 2019 </h5>
                             <p class="card-subtitle mb-2 text-muted">Titre Professionnel de niveau Bac+2 Développeur
                                 web / web mobile | Pop School Lens.</p>
                             <p class="card-text"></p>
@@ -173,7 +196,7 @@
 
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                            <h5 class="card-title">Date : </h5>
+                            <h5 class="card-title">Date : 2015 / 2016</h5>
                             <p class="card-subtitle mb-2 text-muted">Baccalauréat Scientifique | Lycée Voltaire ,
                                 Wingles.</p>
                             <p class="card-text"></p>
@@ -189,12 +212,16 @@
         <div id="compet" class="container competences">
             <div class="comp">
                 <h2><i class="large material-icons go">add_circle</i>Compétences</h2>
+
+                <div class="ligne">
+
+                </div>
             </div>
             <div class="logo">
                 <img class="log" src="image/css3.png" alt="logo css">
                 <img class="log" src="image/html5.png" alt="logo html">
                 <img class="log" src="image/logo_javascript.png" alt="logo javascript">
-                <img class="log" src="image/github_mark.png" alt="logo github">
+                <img class="log" src="image/git.png" alt="logo github">
                 <img class="log" src="image/php.png" alt="logo php">
                 <img class="log" src="image/phpmyadmin-logo.jpg" alt="logo phpmyadmin">
                 <img class="log" src="image/wmark.png" alt="logo wordpress">
@@ -202,16 +229,70 @@
             </div>
         </div>
 
-        <div id="proj" class="container projets">
-            <h2>MES PROJETS ARRIVE !!!!!!!!!!!!!!!!!!</h2>
-        </div>
+
     </main>
     <!-- ---------------------------------------------------- FOOTER ------------------------------------------------------ -->
-    <footer>
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
+
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+                    <ul>
+                        <li>Tél : 06.19.94.13.66</li>
+                        <li>Mail : johan.delcourt@hotmail.com</li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.linkedin.com/in/johan-delcourt-47b818175/"><img src="image/linkedin.png"></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Nahjoo"><img src="image/github-circle.png"></a>
+                        </li>
+                    
+                    </ul>
+
+                </div>
+
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+
+
+
+        <!-- Social buttons -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright: <a href="#">Delcourt_Johan</a></a>
+        </div>
+        <!-- Copyright -->
 
     </footer>
+    <!-- Footer -->
 </body>
+
 </html>
-
-
-

@@ -1,3 +1,14 @@
+body{
+    background-image: url(../image/image-body2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
 .photo{
     display: flex;
     flex-flow : column wrap;
@@ -5,14 +16,24 @@
     align-items: center;
     max-width: 100%;
     height: 100vh;
-    background-image: url(../image/image-ban.jpg);
+    background-image: url(../image/image-body2.jpeg);
     background-size: cover;
     position: relative;
 }
 
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    
+}
+
+
 .go{
     font-size: 50px;
 }
+
 .fleche{
     position: absolute;
     top: 90vh;
@@ -40,6 +61,7 @@ p{
 }
 
 .text{
+    position: absolute;
     padding: 5vh;
     background-color: rgba(19, 18, 18, 0.7);
 }
@@ -51,7 +73,7 @@ p{
 .detail{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
     padding: 5vh;
 }
 
@@ -61,13 +83,13 @@ p{
 
 .container{
     box-shadow: 5px 5px 15px rgb(145, 142, 142);
-    margin-top: 15vh;
     padding: 2vh;
 }
 
 .profil{
     /* box-shadow: 5px 5px 15px rgb(145, 142, 142); */
-    margin-top: 15vh;
+    background-color: white;
+    
     padding: 2vh;
 }
 
@@ -110,7 +132,7 @@ p{
 
 .parcour{
     margin-top: 15vh;
-    background-color: #FFFAFA;
+    background-color: rgb(255, 255, 255);
     padding: 5vh;
 }
 
@@ -184,8 +206,14 @@ p{
 }
 
 .competences{
+    background-color: white;
     margin-top: 15vh;
 } 
+
+footer{
+    background-color: black;
+    
+}
 
 
 
