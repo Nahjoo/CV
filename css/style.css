@@ -61,10 +61,13 @@ p{
 }
 
 .text{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     padding: 5vh;
     background-color: rgba(19, 18, 18, 0.7);
 }
+
 
 .row{
     margin-top: 10vh;
