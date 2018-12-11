@@ -29,8 +29,11 @@ video{
     
 }
 
-.go{
+ul{
+    list-style: none;
+}
 
+.go{
     font-size: 50px;
 }
 
@@ -88,10 +91,6 @@ p{
     box-shadow: 5px 5px 15px rgb(145, 142, 142);
     background-color: rgb(255, 255, 255);
     padding: 2vh;
-}
-
-.loisir{
-    margin-top: 15vh;
 }
 
 .profil{
@@ -156,10 +155,6 @@ p{
     margin-top: 5vh;
 }
 
-.title{
-    margin-top: 10vh;
-}
-
 .experience{
     display: flex;
     justify-content: space-around;
@@ -167,12 +162,17 @@ p{
     margin-top: 10vh;
 }
 
+.title{
+    margin-top: 15vh;
+}
+
 .realisations{
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
+
 
 .card{
     margin-top: 2vh;
@@ -188,6 +188,10 @@ p{
 }
 
 .formation{
+    margin-top: 15vh;
+}
+
+.loisir{
     margin-top: 15vh;
 }
 
@@ -233,28 +237,40 @@ footer{
     
 }
 
-ul{
-    list-style: none;
-}
-
 .hobbies{
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
-.icon-reseaux{
-    width: 45px;
-    height: 45px;
+.hobbies p{
+    margin-left: 2vh;
 }
 
 .color{
     color: whitesmoke;
 }
 
-.grey{
-    color: gray;
+.icon{
+    width: 45px;
+    height: 45px;
 }
+
+/* .amazon{
+    
+    padding: 3vh;
+}
+
+.viapost{
+    
+    padding: 3vh;
+}
+
+.arvato{
+    
+    padding: 3vh;
+} */
 
 
 @media screen and (max-width : 990px){
