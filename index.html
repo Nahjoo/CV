@@ -28,7 +28,9 @@
     <!-- ---------------------------------------------------- HEADER ------------------------------------------------------ -->
     <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-            <a class="navbar-brand" href="#">DELCOURT Johan</a>
+            <a class="navbar-brand" href="#">DELCOURT Johan</a> 
+            <a class="navbar-brand" href="tel:+33619941366"><i class="large material-icons">call</i></a>
+            <a class="navbar-brand" href="mailto:johan.delcourt@hotmail.com"><i class="large material-icons">email</i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,11 +38,12 @@
             <div class="collapse navbar-collapse" id="navbar1">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#prof">Profil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#prof">Profil<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item"><a class="nav-link smooth-scroll" href="#parc"> Parcours </a></li>
                     <li class="nav-item"><a class="nav-link" href="#compet"> Compétences </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#proj"> Projets </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#realisation"> Réalisations </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lois"> Loisir </a></li>
                     </li>
 
                 </ul>
@@ -97,11 +100,11 @@
                             <p>Âge : 21 ans </p>
                         </li>
                         <li>
-                            <p><i class="large material-icons">call</i> : 06.19.94.13.66</p>
+                            <a href="tel:+33619941366"><p><i class="large material-icons">call</i> : 06.19.94.13.66</p></a>
                         </li>
 
                         <li>
-                            <p><i class="large material-icons">email</i> : johan.delcourt@hotmail.com</p>
+                            <a href="mailto:johan.delcourt@hotmail.com"><p><i class="large material-icons">email</i> : johan.delcourt@hotmail.com</p></a>
                         </li>
 
                         <li>
@@ -112,57 +115,59 @@
                 </div>
             </div>
         </div>
+
+        <!-- ----------------------------------------------------- Competences -------------------------------------------------- -->
+        <div id="compet" class="container competences">
+            <div class="comp">
+                <h2><i class="large material-icons go">add_circle</i>Compétences</h2>
+
+                <div class="ligne">
+
+                </div>
+            </div>
+            <div class="logo">
+                <a href="https://github.com/Nahjoo/Mon-projet/blob/master/css/style.css"><img class="log" src="image/css3.png"
+                        alt="logo css"></a>
+                <a href="https://github.com/Nahjoo/Mon-projet/blob/master/index.html"><img class="log" src="image/html5.png"
+                        alt="logo html"></a>
+                <img class="log" src="image/logo_javascript.png" alt="logo javascript">
+                <img class="log" src="image/git.png" alt="logo github">
+                <img class="log" src="image/php.png" alt="logo php">
+                <img class="log" src="image/phpmyadmin-logo.jpg" alt="logo phpmyadmin">
+                <img class="log" src="image/wmark.png" alt="logo wordpress">
+                <img class="log" src="image/linux.png" alt="logo linux">
+            </div>
+        </div>
         <!-- ------------------------------------------------------------------- Parcour ------------------------------------------------------------------------------ -->
         <div id="parc" class="container parcour">
-
             <h2>Parcours</h2>
 
-
             <div class="ligne">
-
-            </div>
-            <div class="title">
-                <h2><i class="large material-icons go">next_week</i>Expériences</h2>
             </div>
 
+            <div id="realisation" class="title-real">
+                <h2><i class="large material-icons go">create</i>Réalisation</h2>
+            </div>
 
-            <div class="row experience">
-
-                <div class="interim">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Intérim</h5>
-                            <p class="card-subtitle mb-2 text-muted">Amazon : Agent de production.</p>
-                            <p class="card-subtitle mb-2 text-muted">viapost : Manutention</p>
-                            <p class="card-subtitle mb-2 text-muted">Arvato : Agent de production</p>
-
-
-                        </div>
-                    </div>
-                </div>
-
+            <div class="realisations">
                 <div class="hackathon">
-
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Hackathon</h5>
                             <p class="card-subtitle mb-2 text-muted">Novembre 2018 : Contact avec des personnes agées.</p>
                             <p class="card-text">Mission : Réalisation d'une maquette, pour améliorer la vie des
                                 personnes agées.</p>
-
                         </div>
                     </div>
                 </div>
 
                 <div class="tadao">
-
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Tadao</h5>
                             <p class="card-subtitle mb-2 text-muted">Projet de petit bus</p>
                             <p class="card-text">Mission : Réalisation d'une base de donnée qui réference les bus les
                                 plus proches.</p>
-
                         </div>
                     </div>
                 </div>
@@ -176,9 +181,48 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
 
+            <div class="title">
+                <h2><i class="large material-icons go">next_week</i>Expériences</h2>
+            </div>
 
+            <div class="row experience">
+                <div class="interim">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Intérim</h5>
+                            <p class="card-subtitle mb-2 text-muted">Amazon</p>
+                            <p class="card-text">Agent de production, Contrôle et enregistrement informatique des
+                                articles réceptionnés.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interim">
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Interim</h5>
+                            <p class="card-subtitle mb-2 text-muted">Viapost</p>
+                            <p class="card-text">Manutention, déchargement de camion.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interim">
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Interim</h5>
+                            <p class="card-subtitle mb-2 text-muted">Arvato</p>
+                            <p class="card-text">Agent de production, mise en boites de capsule Nespresso.</p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="formation">
@@ -209,25 +253,22 @@
             </div>
         </div>
 
-        <div id="compet" class="container competences">
-            <div class="comp">
-                <h2><i class="large material-icons go">add_circle</i>Compétences</h2>
-
-                <div class="ligne">
-
+        <div id="lois" class="container loisir">
+                <div class="comp">
+                    <h2><i class="large material-icons go">directions_run</i>Loisir</h2>
+    
+                    <div class="ligne">
+                    </div>
                 </div>
+                <div class="hobbies">
+                    <p>Musculation depuis 7mois</p>
+                    <p>Jeux video</p>
+                    <p>VTT</p>
+                    <p>Football</p>
+                    <p>Ping-pong</p>
+                </div>
+                
             </div>
-            <div class="logo">
-                <img class="log" src="image/css3.png" alt="logo css">
-                <img class="log" src="image/html5.png" alt="logo html">
-                <img class="log" src="image/logo_javascript.png" alt="logo javascript">
-                <img class="log" src="image/git.png" alt="logo github">
-                <img class="log" src="image/php.png" alt="logo php">
-                <img class="log" src="image/phpmyadmin-logo.jpg" alt="logo phpmyadmin">
-                <img class="log" src="image/wmark.png" alt="logo wordpress">
-                <img class="log" src="image/linux.png" alt="logo linux">
-            </div>
-        </div>
 
 
     </main>
@@ -245,10 +286,10 @@
                 <div class="col-md-4 mx-auto">
 
                     <!-- Content -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+                    <h5 class="text-uppercase mt-3 mb-4 color">Contact</h5>
                     <ul>
-                        <li>Tél : 06.19.94.13.66</li>
-                        <li>Mail : johan.delcourt@hotmail.com</li>
+                        <li class="grey" ><a href="tel:+33619941366">Tél : 06.19.94.13.66</a></li>
+                        <li class="grey" ><a href="mailto:johan.delcourt@hotmail.com">Mail : johan.delcourt@hotmail.com</a></li>
                     </ul>
 
                 </div>
@@ -260,16 +301,16 @@
                 <div class="col-md-2 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                    <h5 class="text-uppercase mt-3 mb-4 color">Links</h5>
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="https://www.linkedin.com/in/johan-delcourt-47b818175/"><img src="image/linkedin.png"></a>
+                            <a href="https://www.linkedin.com/in/johan-delcourt-47b818175/"><img class="icon-reseaux" src="image/linkedin.png"></a>
                         </li>
                         <li>
-                            <a href="https://github.com/Nahjoo"><img src="image/github-circle.png"></a>
+                            <a href="https://github.com/Nahjoo"><img class="icon-reseaux" src="image/github-circle.png"></a>
                         </li>
-                    
+
                     </ul>
 
                 </div>

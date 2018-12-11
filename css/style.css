@@ -29,8 +29,8 @@ video{
     
 }
 
-
 .go{
+
     font-size: 50px;
 }
 
@@ -86,7 +86,12 @@ p{
 
 .container{
     box-shadow: 5px 5px 15px rgb(145, 142, 142);
+    background-color: rgb(255, 255, 255);
     padding: 2vh;
+}
+
+.loisir{
+    margin-top: 15vh;
 }
 
 .profil{
@@ -151,7 +156,18 @@ p{
     margin-top: 5vh;
 }
 
+.title{
+    margin-top: 10vh;
+}
+
 .experience{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin-top: 10vh;
+}
+
+.realisations{
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
@@ -217,22 +233,28 @@ footer{
     
 }
 
-
-
-/* .amazon{
-    
-    padding: 3vh;
+ul{
+    list-style: none;
 }
 
-.viapost{
-    
-    padding: 3vh;
+.hobbies{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }
 
-.arvato{
-    
-    padding: 3vh;
-} */
+.icon-reseaux{
+    width: 45px;
+    height: 45px;
+}
+
+.color{
+    color: whitesmoke;
+}
+
+.grey{
+    color: gray;
+}
 
 
 @media screen and (max-width : 990px){
