@@ -257,22 +257,6 @@ footer{
     height: 45px;
 }
 
-/* .amazon{
-    
-    padding: 3vh;
-}
-
-.viapost{
-    
-    padding: 3vh;
-}
-
-.arvato{
-    
-    padding: 3vh;
-} */
-
-
 @media screen and (max-width : 990px){
     .detail{
         margin-top: 5vh;
